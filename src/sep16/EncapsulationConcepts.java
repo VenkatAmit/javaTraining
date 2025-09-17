@@ -53,11 +53,21 @@ class EmpDetails{
 public class EncapsulationConcepts {
     public static void main(String[] args) {
 
+        //empDetails is an object that has been created
+        //After creating the object we are updating it by passing values
+
         EmpDetails empDetails = new EmpDetails();
 
+        empDetails.setEmpId(90);
         empDetails.setEmpName("Mr.Robot");
         empDetails.setDeptName("Cyber Security");
         empDetails.setSalary(8000);
+
+        empDetails.displayEmpDetails();
+        empDetails.getDeptName();
+        empDetails.getEmpId();
+        empDetails.getEmpName();
+        empDetails.getSalary();
 
     }
 }
