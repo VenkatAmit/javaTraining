@@ -2,6 +2,11 @@ package sep23;
 
 public class Honda extends CarsClasses{
 
+    public Honda(String carName) {
+        super(carName);
+
+    }
+
     @Override
     public void startEngine()
     {
@@ -24,5 +29,13 @@ public class Honda extends CarsClasses{
     public void accelerate()
     {
         System.out.println("Accelerating the Honda Car");
+    }
+
+    @Override
+    public void checkSpeed(double speed) {
+        if(speed>120)
+            System.out.println("You are driving the car too fast");
+        else
+            System.out.println("You're in acceptable speed limits");
     }
 }

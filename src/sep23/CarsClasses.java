@@ -7,8 +7,14 @@ Abstract classes can be used only via Inheritance
 Abstract Variables are not possible in JAVA, only abstract class and abstract methods
 We can have the constructors inside an abstract class, but the child classes also need to implement the constructors
 In the Child class we need to implement the logic for all the abstract methods in the parent class
+
+Abstract Method --> we maintain the method declaration only, not the method body
 */
 public abstract class CarsClasses {
+
+    public CarsClasses(String carName){
+        System.out.println("The car name is: "+carName);
+    }
 
     public abstract void startEngine();
 //    {
@@ -29,4 +35,5 @@ public abstract class CarsClasses {
 //    {
 //        System.out.println("Accelerating the Car");
 //    }
-}
+    abstract void checkSpeed(double speed);
+    }
