@@ -15,7 +15,6 @@ Inheritance works between:
 Interface --> Interface
 Class --> Class
 Class --> Interface
-
 Interface --> Class --> is not supported
 */
 public interface SampleInterfaces {
